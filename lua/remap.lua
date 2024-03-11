@@ -26,6 +26,10 @@ vim.keymap.set("n", "<leader>svwm", function()
     require("vim-with-me").StopVimWithMe()
 end)
 
+---- Toggle line wrapping
+vim.api.nvim_set_keymap('n', '<leader>wr', ':lua vim.wo.wrap = not vim.wo.wrap<CR>', { noremap = true, silent = true })
+
+
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
