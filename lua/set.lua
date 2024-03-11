@@ -40,6 +40,10 @@ vim.opt.smartcase = true
 -- Enable cursor line highlight
 vim.opt.cursorline = true
 
+-- Display extra whitespace
+vim.opt.list = true
+vim.opt.listchars:append({ tab = '»·', trail = '·', eol = '↲' })
+
 -- Set fold settings
 -- These options were reccommended by nvim-ufo
 -- See: https://github.com/kevinhwang91/nvim-ufo#minimal-configuration
